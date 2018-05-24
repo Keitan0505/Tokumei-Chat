@@ -14,6 +14,15 @@
     <script>
 window.alert("注意 : このチャットはまだβ版です。");
 </script>
+    <script>
+var set=0;
+function double() {
+if(set==0){ set=1; } else {
+alert("連続投稿感知。\nそのままお待ちください。");
+return false; }}
+</script>
+
+</head>
 </head>
 
 <body>
@@ -40,7 +49,7 @@ window.alert("注意 : このチャットはまだβ版です。");
                 </div>
             </div>
 
-            <button id="post" class="postarea-button">投稿する</button>
+            <button id="post" class="postarea-button" onClick="double()">投稿する</button>
         </div>
     </div>
 
