@@ -13,8 +13,13 @@
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script>
 window.alert("注意 : このチャットはまだβ版です。");
+        
+        function disp(){
+
+	window.alert('まだBETA版ですので動作に不具合があるかもしれません。なんかあったり機能を増やして欲しかったらIssuesに書いてください。よろしくお願いします。');
+
+}
 </script>
-</head>
 </head>
 
 <body>
@@ -43,6 +48,9 @@ window.alert("注意 : このチャットはまだβ版です。");
 
             <button id="post" class="postarea-button">投稿する</button>
         </div>
+        <a href="https://goo.gl/forms/b9t34E14TIMnI6ej1">投稿削除申請フォーム</a>
+        <p><input type="button" value="このチャットについて" onClick="disp()"></p>
+        
     </div>
 
     <div id="messages" class="content">
